@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código Identificador (opcional)"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor do Ingresso (há uma taxa de R$5)"
+        android:layout_below="@id/editTextCodigo"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextFuncao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Função (digite 'vip' para um acréscimo de 18%)"
+        android:layout_below="@id/editTextValor"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/buttonComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comprar"
+        android:layout_below="@id/editTextFuncao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>
